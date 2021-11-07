@@ -19,6 +19,10 @@ header{
     width: 990px;
 }
 
+.container.container_logo{
+
+align-items: center;
+}
 .logo{
 display: flex;
 align-items: center;
@@ -32,6 +36,7 @@ align-items: center;
 .menu{
     display: flex;
     align-items: center;
+    margin-left: 70px;
 }
 
 nav ul,
@@ -57,6 +62,22 @@ nav .active a,
 nav a:hover{
     background-color: #39aae1;
     color: #ffffff;
+}
+
+.menu-small{
+    display: none;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+}
+.menu-line{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 7px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #39aae1;
 }
 
 #banner{
@@ -347,8 +368,13 @@ footer .widget_title_text{
         margin-left: 30px;
     }
     
-    nav a{
+    .menu{
         display: none;
+    }
+
+    .menu-small{
+        display: flex;
+        margin-right: 30px;
     }
 
     .banner_headline{
@@ -391,11 +417,27 @@ footer .widget_title_text{
     .logo{
         margin-left: 30px;
     }
+
+    .logo img {
+        width: 150px;
+    }
+
     header{
         height: 80px;
     }
     nav a{
         display: none;
+    }
+
+    .menu{
+            display: none;
+    }
+
+    .menu-small{
+        display: flex;
+        margin-right: 30px;
+        width: 30px;
+        height: 30px;
     }
 
     #banner{
